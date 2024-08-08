@@ -1,7 +1,8 @@
 const form = document.getElementById('form');
 const input = document.getElementById('input');
 const usersList = document.querySelector(".addForList");
-const list = document.querySelector('.suggest')
+const list = document.querySelector('.suggest');
+const load = document.querySelector('.loader')
 let url
 
 
@@ -18,6 +19,8 @@ input.addEventListener('input', debounce(async function(event) {
 
     try {
     if(event.target.value !== '') {
+        load.classList.remove('close')
+        list.classList.remove('close')
     url = `https://api.github.com/search/repositories?q=${event.target.value}`
 
   
@@ -37,8 +40,8 @@ let response = await fetch(url, {
             console.log(users)
 
             
-
-                list.classList.remove('close')
+                load.classList.add('close')
+                
 
                 list.innerHTML = `
                         <div class="suggest_form 0">

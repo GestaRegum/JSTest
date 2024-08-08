@@ -34,6 +34,7 @@ input {
 
 .close{
     display: none;
+    opacity: 0;
 }
 .addForList {
     display: grid;
@@ -48,3 +49,4 @@ input {
 .x{
     display: grid;
 }
+
