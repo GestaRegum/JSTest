@@ -1,0 +1,50 @@
+
+html {
+    display: grid;
+    justify-content: center;
+}
+
+body {    
+    margin: 0;
+    display: grid;
+    justify-content: center;
+    padding-top: 20px;
+    max-width: 500px;
+}
+
+label {
+    display: grid;
+    padding: 10px;
+    gap: 20px
+}
+input {
+    padding: 10px;
+    width: 500px;
+
+}
+
+
+.suggest{
+    position: fixed;
+    margin: 0;
+    padding: 5px;
+    width: 300px;
+    background-color: wheat;
+}
+
+.close{
+    display: none;
+}
+.addForList {
+    display: grid;
+}
+
+.suggest_list {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding-left: 10px ;
+    border: 1px solid green;
+}
+.x{
+    display: grid;
+}
