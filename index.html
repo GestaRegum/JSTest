@@ -5,14 +5,14 @@
     <link rel="stylesheet" href="css.css">
     <title>Отправить заявку</title>
 </head>
-<body>
+<body id="body">
     
         <form id="form" class="form_search" action="#" method="get">
         <label >
             <span class="input-title">Что будем искать?</span>
             <input class="input" id="input" type="text" name="username" autocomplete="off" placeholder="пишем сюда..." required>
         </label>
-        <div class="suggest close">
+        <div id="suggest" class="suggest close">
             <div class="loader close"><img src="loader.gif" alt="загрузка"></div>
         </div>
     </form>
@@ -28,6 +28,6 @@
 
 
 
-<script src="Octokit.js"></script>
+<script src="index.js"></script>
 
 </html>

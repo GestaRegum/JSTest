@@ -50,3 +50,6 @@ input {
     display: grid;
 }
 
+[data-action = "closeOn"] {
+    display: none;
+}
