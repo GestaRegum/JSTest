@@ -22,9 +22,12 @@ input {
     width: 500px;
 
 }
+#loader{
+position: absolute;
+}
 
 
-.suggest{
+#suggest{
     position: fixed;
     margin: 0;
     padding: 5px;
@@ -46,10 +49,10 @@ input {
     padding-left: 10px ;
     border: 1px solid green;
 }
-.x{
-    display: grid;
-}
 
-[data-action = "closeOn"] {
-    display: none;
+
+[data-action = "close"] {
+    display: grid;
+    background: url(krest.jpeg);
+    background-size: cover;
 }
